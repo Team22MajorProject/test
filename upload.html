@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload File</title>
+    <link rel="stylesheet" href="upload-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h2>Upload File</h2>
+        <form id="uploadForm" onsubmit="return handleFileUpload(event)">
+            <input type="file" id="fileInput" required>
+            <button type="submit">Upload</button>
+        </form>
+        <div id="uploadedFileContainer" class="hidden">
+            <h3>Uploaded File</h3>
+            <p id="uploadedFileName"></p>
+        </div>
+        <button id="backToDashboard">Back to Dashboard</button>
+    </div>
+    <script src="upload-scripts.js"></script>
+</body>
+</html>
